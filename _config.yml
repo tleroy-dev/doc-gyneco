@@ -1,6 +1,28 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
-theme: jekyll-theme-minimal
+name: "Jekyll true minimal theme"
+description: "Lightweight theme"
+
+url: '' 
+baseurl: ''
+
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+paginate: 10
+paginate_path: /page-:num
+
+#disqus-id: your-disqus-id
+
+source: .
+destination: ./_site
+
+sass:
+    style: :compressed
+    sass_dir: assets/css/
+
